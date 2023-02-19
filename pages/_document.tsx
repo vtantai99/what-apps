@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React from 'react'
 import {
   Html, Head, Main, NextScript
@@ -6,7 +7,7 @@ import {
 export default function Document() {
   return (
     <Html lang="en">
-      <Head />
+      {/* <Head /> */}
       <body>
         <Main />
         <NextScript />
