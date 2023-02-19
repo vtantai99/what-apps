@@ -1,4 +1,4 @@
-name: Check eslint
+name: ESlint CI
 on:
   push:
     branches:
