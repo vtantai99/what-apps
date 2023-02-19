@@ -9,6 +9,13 @@ module.exports = {
     'airbnb',
     'airbnb-typescript'
   ],
+  settings: {
+    'import/resolver': {
+      node: {
+        paths: ['pages']
+      }
+    }
+  },
   parserOptions: {
     project: './tsconfig.json'
   },
@@ -26,7 +33,7 @@ module.exports = {
     'react/jsx-props-no-spreading': 0,
     'react/destructuring-assignment': 0,
     'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'warn',
+    'react-hooks/exhaustive-deps': 'error',
     'linebreak-style': 0
   }
 }
