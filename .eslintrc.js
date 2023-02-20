@@ -17,7 +17,7 @@ module.exports = {
     }
   },
   parserOptions: {
-    project: './tsconfig.json'
+    project: ['./tsconfig.json', 'next.config.js']
   },
   rules: {
     semi: ['error', 'never'],
