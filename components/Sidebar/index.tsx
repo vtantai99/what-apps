@@ -4,11 +4,21 @@ import { IconButton, Tooltip } from '@mui/material'
 import {
   MoreVertOutlined, Chat, Search, Logout
 } from '@mui/icons-material'
+import { signOut } from 'firebase/auth'
+import { auth } from '@/config/firebase'
 import {
   StyledAvatar, StyledContainer, StyledHeader, StyledSearch, StyledSearchInput, StyledSidebarButton
 } from './styled'
 
 function Sidebar() {
+  const logOut = async () => {
+    try {
+      await signOut(auth)
+    } catch (error) {
+      console.log('Tai Vo 🚀 ~ error:', error)
+    }
+  }
+
   return (
     <StyledContainer>
       <StyledHeader>
@@ -23,7 +33,7 @@ function Sidebar() {
           <IconButton>
             <MoreVertOutlined />
           </IconButton>
-          <IconButton>
+          <IconButton onClick={logOut}>
             <Logout />
           </IconButton>
         </div>
