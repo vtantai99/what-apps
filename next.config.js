@@ -1,4 +1,6 @@
-// /** @type {import('next').NextConfig} */
+/**
+ * @type {import('next').NextConfig}
+*/
 const nextConfig = {
   reactStrictMode: true,
   complier: {
@@ -7,3 +9,4 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
+
